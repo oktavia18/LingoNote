@@ -1,0 +1,407 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    background-color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #25b953;
+}
+
+.logo img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #25b953;
+}
+
+/* Hero section */
+.hero {
+    padding: 60px 0;
+    background-color: #f5f7f6;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center align horizontally */
+    text-align: center; /* Center align text */
+}
+
+.hero-content {
+    max-width: 800px; /* Optional: Limit max width for better layout */
+    color: #333;
+}
+
+.hero-image {
+    flex: 1;
+    text-align: center;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: #666;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center; /* Center buttons */
+}
+
+.app-buttons img {
+    height: 45px;
+    cursor: pointer;
+}
+
+/* How it works section */
+.how-it-works {
+    padding: 80px 0;
+    text-align: center; /* Center align text */
+}
+
+.how-it-works h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.steps {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.step-circle {
+    width: 300px;
+    height: 300px;
+    background-color: #e6f5ed;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.step-phone {
+    max-width: 180px;
+}
+
+.step-item {
+    position: absolute;
+    width: 160px;
+    text-align: left;
+}
+
+.step-number {
+    background-color: #25b953;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.step-item h3 {
+    margin-bottom: 8px;
+}
+
+.step-item p {
+    font-size: 14px;
+    color: #666;
+}
+
+.step-1 {
+    top: 0;
+    left: 0;
+}
+
+.step-2 {
+    top: 0;
+    right: 0;
+}
+
+.step-3 {
+    bottom: 0;
+    left: 0;
+}
+
+.step-4 {
+    bottom: 0;
+    right: 0;
+}
+
+/* Features section */
+.app-work {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fff;
+}
+
+.app-work h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.app-work p {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #666;
+}
+
+.app-features {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.app-phones {
+    flex: 1;
+}
+
+.features-list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.feature-item {
+    width: calc(50% - 15px);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature-icon {
+    background-color: #e6f5ed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.feature-icon img {
+    width: 25px;
+    height: 25px;
+}
+
+.feature-item h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.feature-item p {
+    font-size: 14px;
+    text-align: left;
+    color: #666;
+}
+
+/* Download app section */
+.download-app {
+    padding: 60px 0;
+    background-color: #e6f5ed;
+}
+
+.download-container {
+    display: flex;
+    align-items: center;
+}
+
+.download-content {
+    flex: 2;
+    padding-right: 50px;
+}
+
+.download-image {
+    flex: 1;
+}
+
+.download-content h2 {
+    color: #25b953;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.download-content p {
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.get-started-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 30px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-col {
+    flex: 1;
+}
+
+.footer-col h3 {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-col p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #25b953;
+}
+
+.copyright {
+    text-align: left;
+    font-size: 14px;
+    color: #ccc;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+.get-started-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.get-started-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.app-buttons img {
+    height: 45px;
+    cursor: pointer;
+}
